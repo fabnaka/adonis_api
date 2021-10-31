@@ -1,0 +1,126 @@
+
+//insert user
+{
+  "username" : "fabio1",
+  "email" : "fabio_nakazato1@hotmail.com",
+  "password" : "123456"
+}
+
+//insert client
+{
+  "user_id" : "3",
+  "cpf" : "123345",
+  "nome" : "jao",
+  "endereco_rua": "rua antonio dias",
+  "endereco_numero" : "323",
+  "endereco_complemento" : "apto 23",
+  "endereco_bairro": "Monte Castelo",
+  "endereco_cep": "123456",
+  "telefone1" : "5252",
+  "telefone2": "215253",
+  "email" : "fabnakazato@hotmaioil,com",
+  "sexo": "1",
+  "estado_civil": "1",
+  "profissao": "desenvolvedor"
+}
+
+
+//insert client_user 
+{
+  "clients_id" : "1",
+  "fiador" : "1",
+  "indicacao_pessoa1" : "2",
+  "indicacao_pessoa2" : "3"
+}
+
+//insert clients_guarantor_recommendations
+{
+  "clients_id" : "1"
+}
+
+//insert employee
+{
+  "user_id" : "3",
+  "role_id" : "1",
+  "CPF" : "123345",
+  "nome" : "jao",
+  "endereco_rua": "rua antonio dias",
+  "endereco_numero" : "323",
+  "endereco_complemento" : "apto 23",
+  "endereco_bairro": "Monte Castelo",
+  "endereco_cep": "123456",
+  "telefone_contato" : "6733215252",
+  "telefone_celular": "6733215253",
+  "data_ingresso": "32/12/2020",
+  "salario_comissao": "2352.98",
+  "salario_final": "32/12/2020",
+  "user" : "fabnakazato@hotmaioil,com",
+  "senha": "masc"
+}
+
+//insert immobiles
+{
+  "id": "24",
+  "client_owners_id": "2",
+  "locacao": "true",
+  "venda": "false",
+  "ja_foi_locado": "true",
+  "ja_foi_vendido": "true",
+  "foto": "daed",
+  "data_construcao": "22/08/1994",
+  "categoria": "1",
+  "endereco_rua": "daedae",
+  "endereco_numero": "1",
+  "endereco_complemento": "aedafe",
+  "endereco_bairro": "adeaed",
+  "endereco_cep": "423423",
+  "data_anuncio_locacao": "12/02/2001",
+  "data_anuncio_venda": "12/02/2001",
+  "disponibilidade": "1"
+}
+
+//insert immobiles_houses
+{
+  "immobile_id": "2",
+  "qtde_quarto": "3",
+  "qtde_suite": "3",
+  "qtde_sala_de_estar": "3",
+  "qtde_sala_de_jantar": "3",
+  "qtde_vagas_garagem": "3",
+  "area": "3",
+  "possui_armario_embutido": "true",
+  "descricao": "3"
+}
+
+
+//insert immobiles_apartments
+{
+"immobile_id": "2",
+  "qtde_quarto": "3",
+  "qtde_suite": "3",
+  "qtde_sala_de_estar": "3",
+  "qtde_sala_de_jantar": "3",
+  "qtde_vagas_garagem": "3",
+  "area": "3",
+  "possui_armario_embutido": "true",
+  "descricao": "3",
+  "andar": "1",
+  "valor_condominio": "3",
+  "portaria_24h": "true"
+}
+
+//insert immobiles_grounds
+{
+  "immobile_id": "2",
+  "area": "3",
+  "largura": "3",
+  "comprimento": "3",
+  "possui_aclive": "true",
+  "possui_declive": "true"
+}
+
+//insert roles
+{
+  "nome_cargo": "chefe",
+  "salario": "63.5"
+}
