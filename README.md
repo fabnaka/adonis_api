@@ -1,28 +1,27 @@
-# Adonis API application
+# Projeto API Imobiliária
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Este projeto foi desenvolvido na disciplina de Computação Distribuída, na Faculdade de Computação da UFMS. Tem como objetivo demonstrar uma aplicação dos serviços oferecidos por uma imobiliária, na qual o sistema e o banco de dados operam em containers Docker.   
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+### 🔧 Instalação
 
-## Setup
+Execute o comando abaixo para levantar os containers:
+- docker-compose up -d
 
-Use the adonis command to install the blueprint
+Execute o comando abaixo para inserir as migrations no banco de dados:
+- adonis migration:run
 
-```bash
-adonis new yardstick --api-only
-```
+Execute o comando abaixo para levantar um servidor adonis:
+- adonis serve --dev
 
-or manually clone the repo and then run `npm install`.
+Pronto! Agora a API está pronta para ser testado com uma ferramenta de testes como Insomi ou Postman
 
 
-### Migrations
+## 🛠️ Construído com
 
-Run the following command to run startup migrations.
+Mencione as ferramentas que você usou para criar seu projeto
 
-```js
-adonis migration:run
-```
+* [AdonisJS](https://adonisjs.com/) - O framework web utilizado
+* [PostgresSQL](https://www.postgresql.org/) - O banco de dados utilizado
+* [Docker](https://www.docker.com/) - Usada para rodar os containers da aplicação
+ 
+
