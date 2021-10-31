@@ -1,0 +1,51 @@
+version: "3"
+
+networks:
+  adonis_postgres:
+    external: true
+
+volumes:
+  postgres_data:
+
+
+services:
+  api:
+    build: .
+    image: adonis_api
+    container_name: adonis_api
+    links:
+      - postgres
+    volumes:
+      - ./:/app
+    ports:
+      - 3333:3333
+    networks:
+      - adonis_postgres
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres
+    container_name: db_postgres
+    restart: always
+    volumes:
+      - "./postgres_data:/var/lib/postgressql/data"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DATABASE: adonis
+    ports:
+      - 5433:5432
+    networks:
+      - adonis_postgres
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "seuemail@email.com"
+      PGADMIN_DEFAULT_PASSWORD: "senha1"
+    ports:
+      - 5008:80
+    networks:
+      - adonis_postgres
+    depends_on:
+      - postgres
