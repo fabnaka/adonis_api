@@ -1,6 +1,12 @@
 # Projeto API Imobiliária
 
-Este projeto foi desenvolvido na disciplina de Computação Distribuída, na Faculdade de Computação da UFMS. Tem como objetivo demonstrar uma aplicação dos serviços oferecidos por uma imobiliária, na qual o sistema e o banco de dados operam em containers Docker.   
+Este projeto foi desenvolvido na disciplina de Computação Distribuída, na Faculdade de Computação da UFMS. Tem como objetivo demonstrar uma aplicação dos serviços oferecidos por uma imobiliária, na qual o sistema e o banco de dados operam em containers Docker. O sistema apresenta a validação de três regras de negócios:
+1) Validação de usuário para permissão em update de usuários
+2) Todas formas de pagamentos para se efetuar uma venda devem ser previamente cadastradas
+3) Se um mesmo imóvel é colocado mais de uma vez para venda ou aluguel, somente a informação mais recente deve ser armazenada. As informações mais antigas a respeito do imóvel vão para uma tabela de histórico.
+
+O projeto foi efetuado utilizando o framework web AdonisJS utilizando o ORM para a criação das tabelas. O banco de dados foi cosntruído utilizando o PostgresSQL. Há um diagrama entidade-relacionamento referente ao banco de dados no diretório "diagrama_bd". 
+
 
 ### 🔧 Instalação
 

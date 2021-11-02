@@ -120,7 +120,7 @@ class UserController {
     const userData = request.only(['username', 'email','password']);
 
     try{
-      const user = auth.user;
+      const user = auth.current.user;
 
       user.username = userData.username
       user.email = userData.email
@@ -128,6 +128,11 @@ class UserController {
 
 
       await user.save();
+
+      return response.json({
+        status: "sucess",
+        message: "Perfil atualizado com sucesso"
+      })
 
     } catch(error){
       return response.status(404).json({

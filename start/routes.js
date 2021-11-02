@@ -27,9 +27,10 @@ Route.resource("users", "UserController").apiOnly()
 
 Route.group ( () => {
   //Route.resource("users", "UserController").apiOnly()
-  Route.put('/profile','UserController.updateProfile')
+  Route.put("/update_profile","UserController.updateProfile")
+  //Route.put('/users','UserController.update')
   
-}).middleware (['auth']);
+}).middleware (["auth"]);
 
 //Route.post('/clients','ClientController.create')
 //Route.get('/clients','ClientController.index')

@@ -124,3 +124,49 @@
   "nome_cargo": "chefe",
   "salario": "63.5"
 }
+
+
+//insert payments
+{
+  "nome": "cartão débito"
+}
+
+
+//insert sell_rent
+{
+  "immobile_id": "1",
+  "payment_id": "1",
+  "employee_id": "1",
+  "user_id": "1",
+  "contrato": "1",
+  "tipo": "1",
+  "valor": "235.55",
+  "porcentagem_imobiliaria": "15.5",
+  "porcentagem_funcionario": "5.5",
+  "data": "22/08/2020"
+}
+
+//insert operation
+{
+  "sell_rent_id": "1",
+  "immobile_id": "1"
+}
+
+//insert inmmobile historic
+{
+  "operation_immobile_id": "1",
+  "locacao": "true",
+  "venda": "false",
+  "ja_foi_locado": "true",
+  "ja_foi_vendido": "true",
+  "foto": "daed",
+  "data_construcao": "22/08/1994",
+  "categoria": "1",
+  "endereco_rua": "daedae",
+  "endereco_numero": "1",
+  "endereco_complemento": "aedafe",
+  "endereco_bairro": "adeaed",
+  "endereco_cep": "423423",
+  "data_anuncio_locacao": "12/02/2001",
+  "data_anuncio_venda": "12/02/2001",
+}
